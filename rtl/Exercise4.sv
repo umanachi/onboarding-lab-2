@@ -20,5 +20,20 @@ module Exercise4 (
 
     output logic [7:0] out
 );
+  
+  always_comb begin
+    if (~cs)
+      out <= 0;
+    else begin
+      if (sel == 0)
+        out <= alpha;
+      else if (sel == 1)
+        out <= beta;
+      else if (sel == 2)
+        out <= gamma;
+      else
+        out <= 0;
+    end
+  end
 
 endmodule
