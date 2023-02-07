@@ -1,5 +1,5 @@
 /**
-  @brief An asynchronous mux/decoder
+  @brief An asynchronous mux/decoder, combinational logic
 
   @input sel   input select
   @input cs    chip select
